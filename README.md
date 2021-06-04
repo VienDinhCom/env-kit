@@ -36,7 +36,7 @@ Get all environment variables
 const allEnvVars = envKit.get();
 ```
 
-Get one environment variables
+Get one environment variable
 
 ```ts
 const API_URL = envKit.get('API_URL');
