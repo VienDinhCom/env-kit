@@ -25,7 +25,7 @@ const envKit = require('env-kit');
 Pick environment variables
 
 ```ts
-const { development, production, API_KEY } = envKit.pick(['development', 'production', 'API_KEY']);
+const { API_URL, API_KEY } = envKit.pick(['API_URL', 'API_KEY']);
 ```
 
 ### Get
@@ -39,5 +39,6 @@ const allEnvVars = envKit.get();
 Get one environment variables
 
 ```ts
+const API_URL = envKit.get('API_URL');
 const API_KEY = envKit.get('API_KEY');
 ```
